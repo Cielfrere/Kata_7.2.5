@@ -9,6 +9,9 @@ import exercise.worker.WorkerImpl;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
 
 
 public class Main {
@@ -22,12 +25,12 @@ public class Main {
         List<Article> newArticles = new ArrayList<>();
 
         newArticles.add(new Article(
-                null,
+                "null",
                 "Мягкие навыки помогают решать задачи и взаимодействовать с другими людьми. Можно обладать хорошими знаниями и умениями, но без развитых soft skills очень трудно работать в современных компаниях. Особенно айтишникам. Рассказываем, почему.",
                 "Иван Иванов",
                 LocalDate.of(2023, 1, 6)));
         newArticles.add(new Article(
-                "Что такое функциональное чтение? Или как эффективно учиться программированию",
+                "null",
                 "Функциональное чтение позволяет эффективнее работать с новой информацией. Как этот метод поможет читать книги для программистов и не только? Разбираем в сегодняшней статье.",
                 "Иван Иванов",
                 null));
