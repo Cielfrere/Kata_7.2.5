@@ -46,11 +46,11 @@ public class WorkerImpl implements Worker {
                 .map(Article::getTitle)
                 .collect(Collectors.toList());
         Set<String> uniqueTitles = new HashSet<>(newTitles);
+
         if (newTitles.size() != uniqueTitles.size()) {
             System.out.println("Невозможно добавить статьи с одинаковыми названиями.");
             return Collections.emptyList();
         }
-
         return result;
     }
 
